@@ -1,0 +1,458 @@
+body{
+    text-align: center;
+    background-size: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: aliceblue;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* <-- Title Section --> */
+
+#title {
+    background-color: #ff4c68;
+    position: relative;
+    
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar {
+    margin-bottom: 6%;
+}
+
+#btn-google-play{
+    margin: 10% 5%;
+}
+
+#btn-apple {
+    margin:10% 5%;
+}
+
+#iphone-mockup {
+    width: 60%;
+    margin: 0 10% 0 auto;
+    position: relative;
+    transform: rotate(30deg)
+    
+}
+
+.navbar {
+    margin-left: 2%;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+/*Feature*/
+
+#features {
+    background-color: #fff;
+    position: relative;
+    margin-top: -15%;
+    z-index: 1;
+}
+
+.feature {
+    width: 90%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.feature-breif {
+    width: 45%;
+    font-family: sans-serif;
+    margin: auto;
+    opacity: 60%;
+    font-size: small;
+    font-weight: 500;
+    
+}
+
+.icon {
+    color: rgb(252, 124, 124);
+    padding-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background-color:#ef8172;
+    
+}
+
+.testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    width: 75%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 3rem;
+    padding-top: 3%;
+    color: #fff;
+}
+
+.testimonial-image {
+    width: 20%;
+    border-radius: 100%;
+    
+    padding: 3% 3%;
+}
+#press {
+    background-color: #ef8172;
+    
+}
+.owner-name {
+    color: #fff;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.press-img {
+    width: 15rem;
+    margin: 7% 0 7%;
+    
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* --Pricing-- */
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3%;
+}
+
+.btn-1 {
+    margin-top: 12%; 
+}
+
+.btn-2 {
+    margin-top: 12%;
+
+}
+
+/* 
+ Z-Index --> 
+
+Z-index is an advance CSS concept. In general words it means or is designed to stacking the layout over each other.
+By default the Z-index value of each layout or <div> or <section> is 0.
+when you change the value from 0 to 1 or -1 or 2,3... or -2,-3... it stacks (overlap the layout or div or section over one another).
+It works only when the position property is set to "absolute" or "relative".
+for example try below code to understand the concept clearly -->
+
+HTML COde --->
+
+<div class="red">
+  Red
+</div>
+
+<div class="blue">
+  Blue
+</div>
+
+<div class="yellow">
+  Yellow
+</div>
+
+CSS Code --->
+
+div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.red {
+  background-color: red;
+  z-index: 3;
+  
+}
+
+.blue {
+  background-color: blue;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.yellow {
+  background-color: yellow;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+/*
+--> Meia Query <--
+It is basically an advance version of styling your web and making it responsive through CSS without depending much on Bootstrap.
+Structure--> @media <type> <Feature> {
+    target your section, IDS, Classes in this area and make changes same as CSS
+}
+eg --> 
+
+@media (min-width: 1028PX) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+There are various features of a media query. Refer to relevent website for more details.
+*/
+
+/* Call The Action Section */
+
+#cta {
+    width: 98%;
+    position: relative;
+    background-color: #ff4c68;
+}
+
+.cta-msg {
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    color: aliceblue;
+    line-height: 1.5;
+}
+
+.footer-buttons-1 {
+    width: 15%;
+    margin-top: 15%;
+    margin-left: 34%;
+    
+}
+.footer-buttons-2 {
+    width: 15%;
+    margin-top: 15%;
+    
+}
+
+#btn-footer-apple {
+    margin: 20% 2% 15%;
+}
+
+#btn-footer-google-play {
+    margin: 20% 2% 15%;
+}
+
+/* footer Secrion */
+
+.footer-icon {
+    margin: 7% 0.5% 1%;
+}
+
+.Copyright-Tindog {
+    background-color: rgb(39, 35, 35);
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 2%;
+    padding: 1%;
+    color: #fff;
+    font-size: medium;
+    font-weight: 300;
+    
+}
+
+/* --> Media Query Section <-- */
+
+@media (max-width: 1343px) and (min-width: 768px) {
+       h3 {
+        font-size: x-large;
+
+       }
+}
+
+@media (max-width: 1250px) {
+    .title-heading {
+        line-height: 1.2;
+        font-weight: 300;
+    }
+
+    .cta-msg {
+        font-size: 3rem;
+    }
+
+    .footer-buttons-1 {
+        width: 20%;
+        margin-top: 15%;
+        margin-left: 34%;
+        
+    }
+    .footer-buttons-2 {
+        width: 20%;
+        margin-top: 15%;
+        
+    }
+
+}
+
+
+@media (max-width: 1124px) {
+    #testimonials {
+        position: static;
+    }
+    #features {
+        position: static;
+        margin-top: 0;
+    }
+    #iphone-mockup {
+        position: static;
+        width: 60%;
+        transform: rotate(0);
+        margin-left: 15%;
+     
+    }
+
+    .testimonial-text {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+}
+
+@media (max-width: 1015px) {
+    .title-heading {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    #iphone-mockup {
+        position: static;
+        width: 75%;
+        transform: rotate(0);
+        margin-left: 15%;
+     
+    }
+}
+
+@media (max-width: 960px) {
+
+    #title {
+        text-align: center;
+        position: static;
+    }
+
+    #iphone-mockup {
+        position: static;
+        width: 80%;
+        transform: rotate(0);
+        margin-left: 15%;
+     
+    }
+   
+
+    .cta-msg {
+        font-family: 'IBM Plex Sans', sans-serif;
+        line-height: 1.2;
+    }
+
+    .footer-buttons-1 {
+        width: 25%;
+        margin-top: 15%;
+        margin-left: 25%;
+        
+    }
+    .footer-buttons-2 {
+        width: 25%;
+        margin-top: 15%;
+        
+    }
+}
+
+@media (max-width: 860px) {
+    #iphone-mockup {
+        width: 80%;
+    
+    }
+
+    .title-heading {
+        width: 120%;
+        
+    }
+
+    .cta-msg {
+        font-family: 'IBM Plex Sans', sans-serif;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 767.5px) {
+    .title-heading {
+        font-family: 'Montserrat';
+    }
+
+    .testimonial-image {
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width: 680px) {
+    .press-img {
+        display: none;
+    }
+
+    .footer-buttons-1 {
+        width: 30%;
+        height: 20%;
+      
+    }
+    .footer-buttons-2 {
+        width: 30%;
+        margin-top: 15%;
+     
+    }
+
+    .cta-msg {
+        font-family: 'Sora', sans-serif;
+    }
+
+    .footer-buttons-1 {
+        width: 40%;
+        margin-top: 20%;
+        margin-left: 10%;
+        
+    }
+    .footer-buttons-2 {
+        width: 40%;
+        margin-top: 20%;
+        
+    }
+}
+
+@media (max-width: 664px) {
+
+    h3 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 900;
+    }
+    .cta-msg {
+        margin-top: 5%;
+        font-size: x-large;
+        font-weight: 800;
+    }
+}
+
+/* <-- Media Query -->*/
